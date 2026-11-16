@@ -1,0 +1,19 @@
+# data, third-party code, weights, and generated outputs are not part of the repository
+data/
+third_party/
+checkpoints/
+annotations/
+results/
+src/work_*/
+src/bg_*.npz
+src/lumpi_bg*.npz
+src/st_pkg/ft_data/
+src/st_pkg/out/
+src/st_pkg/logs/
+src/st_pkg/st_in/
+src/st_pkg/st_check/
+src/st_pkg/st_eval_in/
+src/st_pkg/st_eval_out/
+src/xwalk/cross*.csv
+__pycache__/
+*.pyc

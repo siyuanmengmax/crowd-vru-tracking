@@ -1,0 +1,20 @@
+# ------------------- General Options -------------------------
+description                  : AB3DMOT for Roadside Lidar
+seed                         : 0
+
+# --------------- main.py
+save_root                    : ./results/ROADSIDE
+dataset                      : ROADSIDE      # ROADSIDE for roadside Lidar
+split                        : val           # val, test, train
+det_name                     : roadside_detector  # name of your detector
+cat_list                     : ['Car', 'Pedestrian', 'Cyclist']  # adjust based on your labels
+
+score_threshold              : -10000        # filter out tracklet with low confidence
+num_hypo                     : 1             # >1 to allow multi-hypothesis tracking
+
+# --------------- model.py
+# 🚨 CRITICAL for roadside Lidar: disable ego-motion compensation
+# Roadside sensors are stationary, no ego-motion!
+ego_com                      : false         # MUST be false for roadside scenario
+vis                          : false         # only for debug or visualization
+affi_pro                     : true          # affinity processing

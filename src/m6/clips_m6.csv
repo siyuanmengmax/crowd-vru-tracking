@@ -1,0 +1,7 @@
+clip,start_frame,stratum,close,vru_per_frame,ids
+m6__c9600,9600,crowded,2220.0,42.4,251.0
+m6__c8700,8700,crowded,1821.0,33.9,263.0
+m6__c11400,11400,crowded,1814.0,28.0,213.0
+m6__c6000,6000,medium,464.0,13.1,78.0
+m6__c7200,7200,medium,402.0,23.2,140.0
+m6__c3900,3900,sparse,0.0,11.9,20.0

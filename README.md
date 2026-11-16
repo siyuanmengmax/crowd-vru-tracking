@@ -106,9 +106,10 @@ AssA_m and Cover80: `python assoc_eval.py` (with `WORK_V2X`, `WORK_M4`, `WORK_M6
 
 ### Checks of this release
 
-The released code was run against the outputs behind the paper on one V2X-Real test scenario
-(background model, labels, clusters, front end, and all three trackers gave byte-identical files) and the
-evaluation was rerun on all V2X-Real evaluation scenarios and M4 clips:
+The released code was run against the outputs behind the paper. On one V2X-Real test scenario, the background
+model, labels, clusters, front end, and all three trackers gave byte-identical files. On one clip each of LUMPI M4
+and M6, the sensor poses, background models, labels, clusters, front end, size rule, and filtered detector input
+gave byte-identical files. The evaluation was rerun on all V2X-Real evaluation scenarios and all M4 and M6 clips:
 
 | Site | Tracker | MOTA | IDF1 | IDS |
 |---|---|---|---|---|
@@ -118,6 +119,9 @@ evaluation was rerun on all V2X-Real evaluation scenarios and M4 clips:
 | LUMPI M4 | AB3DMOT 20/3 | 65.5 | 64.9 | 857 |
 | LUMPI M4 | ImmortalTracker | 59.3 | 64.9 | 867 |
 | LUMPI M4 | Single Point UKF | 45.6 | 48.8 | 1330 |
+| LUMPI M6 | AB3DMOT 20/3 | 12.4 | 39.3 | 753 |
+| LUMPI M6 | ImmortalTracker | 26.0 | 40.9 | 914 |
+| LUMPI M6 | Single Point UKF | 16.4 | 38.6 | 732 |
 
 Detector inference was not rerun for this check.
 
